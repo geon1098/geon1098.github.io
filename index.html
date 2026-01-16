@@ -4,8 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>남씨 엑스트라의 블로그</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      line-height: 1.6;
+    }
+    nav {
+      width: 250px;
+      background: #f4f4f4;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      overflow-y: auto;
+      border-right: 1px solid #ddd;
+    }
+    nav h2 {
+      margin-top: 0;
+    }
+    nav a {
+      display: block;
+      margin: 10px 0;
+      color: #333;
+      text-decoration: none;
+    }
+    main {
+      margin-left: 270px;
+      padding: 40px;
+      max-width: 800px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    code {
+      background: #eee;
+      padding: 4px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      display: block;
+      margin: 10px 0;
+    }
+    </style>
 </head>
 <body>
-    깃허브 페이지 첫 페이지
+    <nav>
+    <h2>내 포트폴리오</h2>
+    <a href="#intro">소개</a>
+    <a href="#skills">기술 스택</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <main>
+    <!-- 소개 섹션 -->
+    <section id="intro">
+      <h1>웹개발자 지망생의 포트폴리오</h1>
+      <p>
+        안녕하세요! 저는 웹기술과 AI활용에 흥미가 많고, 기본기를 탄탄히 다지며 성장 중인 개발자입니다.
+        이 페이지에서는 제가 공부하고 만든 것들을 정리했습니다.
+      </p>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section id="skills">
+      <h2>기술 스택</h2>
+      <p>저에게 익숙한 기술입니다.</p>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>Vanilla JavaScript</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <!-- 예시 UI -->
+    <section id="projects">
+      <h2>프로젝트</h2>
+      <article>
+        <h3>1. 예제 Vanilla JS 페이지</h3>
+        <p>
+          이 프로젝트는 순수 자바스크립트로 만든 반응형 UI 예제입니다.
+          DOM 조작, 이벤트 처리 등을 사용했습니다.
+        </p>
+        <code>
+// 예: 버튼 클릭 카운터
+document.querySelector('#btn').addEventListener('click', function () {
+  document.querySelector('#count').textContent++;
+});
+        </code>
+      </article>
+
+      <article>
+        <h3>2. React Todo App</h3>
+        <p>React로 만든 간단한 Todo 앱입니다. 상태 관리와 컴포넌트 분리를 직접 구현했습니다.</p>
+        <code>
+{/* 예: React 상태 */}
+const [todos, setTodos] = useState([]);
+        </code>
+      </article>
+
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact">
+      <h2>연락처</h2>
+      <p>GitHub: <a href="https://github.com/geon1098">남건우</a></p>
+      <p>Email: geonwoo1098@gmail.com</p>
+    </section>
+  </main>
 </body>
 </html>
